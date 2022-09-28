@@ -1,15 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <NavBar/>
+    <router-view/>
+</div>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
 
+
+//import moment from 'moment'
+import NavBar from './components/NavBar.vue' 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar
+},
+
+  mounted(){
+      // let m = moment().format('yyyy-MM-DD')
+      // console.log(m)
   }
 }
 </script>
